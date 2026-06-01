@@ -4,27 +4,27 @@
 src/main/java
 │
 ├── domain
-│   ├── model
-│   │   ├── Livro.java
-│   │   ├── Usuario.java
-│   │   └── Emprestimo.java
+│   └── model
+│       ├── Book.java
+│       ├── User.java
+│       └── BookLoan.java
 │
 ├── application
 │   ├── ports
-│   │   └── LivroRepository.java
+│   │   └── BookRepository.java
 │   │
 │   └── usecases
-│       └── EmprestarLivroUseCase.java
+│       └── LendBookUseCase.java
 │
 ├── infrastructure
-│   ├── persistence
-│   │   ├── entity
-│   │   ├── mapper
-│   │   ├── repository
-│   │   └── LivroRepositoryImpl.java
+│   └── persistence
+│       ├── BookRepositoryImpl.java
+│       ├── BookEntity.java
+│       ├── BookMapper.java
+│       └── JpaBookRepository.java
 │
 ├── presentation
 │   └── controller
-│       └── LivroController.java
+│       └── BookController.java
 │
-└── BibliotecaApplication.java
+└── LibraryApplication.java
