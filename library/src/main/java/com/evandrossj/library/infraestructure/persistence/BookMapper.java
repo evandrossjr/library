@@ -13,8 +13,5 @@ public class BookMapper {
 
     public BookEntity toEntity(Book book){
         return new BookEntity(book.getId(), book.getTitle(), book.getStock());
-
     }
-
-
 }

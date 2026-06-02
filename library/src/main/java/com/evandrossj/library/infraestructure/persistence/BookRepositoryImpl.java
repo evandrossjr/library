@@ -15,7 +15,6 @@ public class BookRepositoryImpl implements BookRepository {
     private final JPABookRepository jpa;
     private final BookMapper mapper;
 
-
     public BookRepositoryImpl(JPABookRepository jpa, BookMapper mapper) {
         this.jpa = jpa;
         this.mapper = mapper;
